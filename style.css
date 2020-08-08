@@ -152,6 +152,8 @@ h6 {
   font-family: Bitter, Georgia, serif;
   line-height: 1.3; }
 
+
+
 h1 {
   font-size: 48px;
   margin: 33px 0; }
@@ -195,7 +197,10 @@ mark {
   color: #000; }
 
 p {
-  margin: 0 0 24px; }
+  font-size: 15px;
+  margin: 0 0 24px; 
+  color: #666666;
+}
 
 code,
 kbd,
@@ -528,6 +533,9 @@ Helper Class
 
 .theme-color {
   color: #89d700; }
+.theme-color-2 {
+  color: #faae08;
+}  
 
 .poss-relative {
   position: relative; }
@@ -1478,7 +1486,8 @@ button.play__btn {
   padding-bottom: 45px;
   position: relative;
   font-family: "Dosis", sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+ }
   .section__title h2.title__line::before {
     background: rgba(0, 0, 0, 0) url("images/icons/title.png") no-repeat scroll 0 0;
     bottom: 0;
@@ -1515,6 +1524,7 @@ button.play__btn {
 .section__title--2 h2.title__line {
   color: #444444;
   font-size: 48px;
+  background-color: white;
   line-height: 37px;
   padding-top: 30px;
   position: relative;
@@ -1578,7 +1588,8 @@ button.play__btn {
 
   .section__title h2.title__line {
     font-size: 28px;
-    padding-bottom: 24px; }
+    padding-bottom: 24px; 
+  }
 
   .container-fluid .section__title p {
     padding: 0; } }
@@ -2221,9 +2232,9 @@ Blocks Styles
 
 .header__variation--4 .shopbox {
   height: 80px; }
-
+/* ///////////////////////////////////////////////////////////////////////////// */
 .header--3.header__variation--4 .mainmenu__wrapper .mainmenu__wrap .mainmenu__nav .mainmenu > li > a {
-  color: #fff; }
+  color: rgba(85, 67, 117, .6) !important; }
 
 .header__variation--4 .accounting li a {
   color: #fff; }
@@ -2240,9 +2251,9 @@ Blocks Styles
   line-height: inherit;
   text-align: center;
   width: auto; }
-
+  .bg-image--18
 .header__variation--4 .sticky__header.is-sticky {
-  background: #000; }
+  background: #f31010 !important; }
 
 .header--5 .jun__header__top__left p {
   color: #777777;
@@ -2264,7 +2275,7 @@ Blocks Styles
   padding-top: 11px; }
 
 .header--5 .shopbox a {
-  background: #444444 none repeat scroll 0 0;
+  background: #f7f7f7 none repeat scroll 0 0;
   height: 37px;
   line-height: 37px;
   width: 37px; }
@@ -2337,8 +2348,10 @@ Blocks Styles
     margin-top: 8px; } }
 /*===============================
 	Navigation Styles
-=================================*/
+================================= */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// ////////////////////////*/
 .mainmenu__wrapper {
+  background-color: #fff !important;
   position: relative;
   padding-top: 13px;
   z-index: 9; }
@@ -2354,10 +2367,10 @@ Blocks Styles
     .mainmenu__wrapper .mainmenu__wrap .mainmenu__nav .mainmenu > li {
       align-self: stretch;
       display: flex;
-      margin: 0 20px; }
+      margin: 0 12px; }
       .mainmenu__wrapper .mainmenu__wrap .mainmenu__nav .mainmenu > li > a {
         align-items: center;
-        color: #ffffff;
+        /* color: rgba(0, 0, 0, .4) !important; */
         display: flex;
         font-size: 16px;
         font-weight: 700;
@@ -2406,7 +2419,7 @@ Blocks Styles
     padding: 6px 20px 6px 8px;
     text-transform: capitalize;
     transition: all 300ms ease 0s;
-    color: #969696;
+    color: #969696 !important;
     display: block; }
 
   .mainmenu li.drop:hover > ul.dropdown__menu > li:not(:last-child) {
@@ -2738,6 +2751,7 @@ Blocks Styles
 .slider--five.slider__fixed--height {
   height: 850px; }
 
+  
 .slider--six .slide .slide__inner {
   text-align: left; }
   .slider--six .slide .slide__inner h1 {
@@ -3160,14 +3174,15 @@ Blocks Styles
   margin-top: 50px;
   padding: 0 77px; }
   .jn__welcome__wrapper .welcome__juniro__inner h3 {
-    color: #333333;
+    color: #333333 !important;
     font-size: 44px;
     font-weight: 400;
     margin-bottom: 13px;
     font-family: "Dosis", sans-serif; }
   .jn__welcome__wrapper .welcome__juniro__inner p {
-    color: #777777;
-    font-size: 15px;
+    color: #777777 !important;
+    font-size: 25px !important;
+    font-weight: 900 !important;
     line-height: 27px;
     padding-right: 7%; }
   .jn__welcome__wrapper .welcome__juniro__inner .wel__btn {
@@ -3232,7 +3247,9 @@ Blocks Styles
   border-radius: 5px; }
 
 .welcome--2 .welcome__juniro__inner {
-  padding-left: 100px; }
+  padding-top: 50px;
+  text-align: center;
+}
 
 .welcome--2 .jn__welcome__wrapper .welcome__juniro__inner p {
   padding-right: 13%; }
@@ -3505,7 +3522,7 @@ Blocks Styles
         background: #fff none repeat scroll 0 0;
         border-bottom: 2px solid transparent;
         border-radius: 5px;
-        color: #ffffff;
+        color: rgba(0, 0, 0, .4);
         display: inline-block;
         height: 45px;
         line-height: 45px;
@@ -3927,7 +3944,7 @@ Blocks Styles
       width: 136%;
       z-index: 1; }
     .gallery .gallery__thumb a img {
-      width: 100%; }
+      width: 95%; }
   .gallery .gallery__hover__inner {
     position: absolute;
     text-align: center;
@@ -4173,15 +4190,17 @@ Blocks Styles
 .blog__2 {
   margin-top: 20px;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  transition: all .3s;
+}
   .blog__2 .text-only {
-    background: ##e6e8e1;
+    background: #e6e8e1;
    color: #000000;
    display: inline-block;
    font-family: "Dosis", sans-serif;
    font-size: 15px;
    font-weight: 700;
-   padding: 10px 10px;
+   padding: 20px 30px;
 
   }
   .blog__2 .blog__thumb a {
@@ -4260,6 +4279,13 @@ Blocks Styles
           color: #fff; }
   .blog__2:hover .blog__inner {
     margin-bottom: 0; }
+
+    .blog__2:hover{
+      transform: translateY(-8px) scale(1.009);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+    }
+
 
 @media only screen and (min-width: 992px) and (max-width: 1500px) {
   .blog__2 .blog__inner .blog__hover__inner .bl__meta p {
@@ -4959,7 +4985,9 @@ button.cartbox__item__remove {
           color: #ffffff;
           line-height: 23px;
           margin-bottom: 28px;
-          padding: 0 4px; }
+          padding: 0 4px;
+          font-size: 10px !important;
+        }
   .team .team__details {
     background: #f6f6f6 none repeat scroll 0 0;
     padding: 34px 0; }
@@ -5200,7 +5228,15 @@ button.cartbox__item__remove {
       padding-left: 20px;
       padding-top: 11px; }
   .dacre__choose__option .choose__big__img {
-    text-align: center; }
+    text-align: center;
+    transition: all .3s;
+  }
+
+    .dacre__choose__option:hover .choose__big__img {
+         transform: scale(1.05); 
+         /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); */
+    } 
+
   .dacre__choose__option.text__align--left .choose .choose__inner {
     text-align: left; }
   .dacre__choose__option.text__align--left .choose .choose__icon {
@@ -5261,6 +5297,15 @@ button.cartbox__item__remove {
           transform: scale(0);
           transition: all 0.4s ease 0s;
           width: 45px; }
+
+          /* .dc__popular__img{
+            transition: all .3s;
+          }
+
+          .dacre__popular__classes:hover .dc__popular__img{
+            transform: scale(1.05) !important;
+          } */
+
     .popular__class__group .dacre__popular__classes .dc__popular__details {
       align-self: center;
       -webkit-flex-basis: 58%;
@@ -5387,10 +5432,22 @@ button.cartbox__item__remove {
     padding: 20px 30px; }
 
   .popular__class__group .dacre__popular__classes {
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+  }
+
+  
 
   .popular__class__group .dacre__popular__classes + .dacre__popular__classes {
     display: none; } }
+
+    .dacre__popular__classes{
+      transition: all .3s;
+    }
+
+    .dacre__popular__classes:hover{
+      transform: scale(1.02) !important;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
 /*========================
 	Product ARea
 ===========================*/
@@ -6090,9 +6147,10 @@ h3.widget-title-modal {
 /*===============================
 	Courses Area
 =================================*/
-.class__list:hover .courses__thumb a img {
-  transform: scale(1.1);
-}
+/* .class__list:hover .courses__thumb a img {
+  transform: scale(1.005);
+} */
+
 .class__list .course__thumb {
   overflow: hidden;
 }
@@ -6104,7 +6162,7 @@ h3.widget-title-modal {
   box-shadow: 0 0 32px rgba(254, 46, 41, 0.1);
   margin-top: 40px; }
   .courses:hover .courses__thumb a img {
-    transform: scale(1.2); }
+    transform: scale(1.03); }
   .courses .courses__thumb {
     overflow: hidden; }
     .courses .courses__thumb a img {
@@ -6319,6 +6377,7 @@ h3.widget-title-modal {
     align-items: center;
     display: flex;
     height: 120px;
+    margin-right: 80px;
     justify-content: space-between;
     padding-bottom: 8px; }
     .ht__bradcaump__container .bradcaump__inner h2 {
@@ -6326,6 +6385,7 @@ h3.widget-title-modal {
       font-family: "Dosis", sans-serif;
       font-size: 36px;
       font-weight: 700;
+      margin-left: 40px !important;
       text-transform: capitalize; }
     .ht__bradcaump__container .bradcaump__inner .breadcrumb-item {
       color: #777777;
@@ -6342,7 +6402,8 @@ h3.widget-title-modal {
   color: #89d700; }
 
 .ht__bradcaump__container {
-  box-shadow: 8px 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #f7f7f7;
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15);
   margin-bottom: 10px !important; }
 
 .bradcaump__style--2 .ht__bradcaump__container {
@@ -6406,7 +6467,7 @@ h3.widget-title-modal {
           .class__list .courses__inner ul.courses__meta li.user i {
             padding-right: 9px; }
     .class__list .courses__inner .courses__wrap {
-      padding: 50px 20px 22px 50px; }
+      padding: 30px 20px 22px 50px; }
       .class__list .courses__inner .courses__wrap .courses__date i {
         padding-right: 9px; }
       .class__list .courses__inner .courses__wrap .courses__content h4 {
@@ -6502,9 +6563,6 @@ h3.widget-title-modal {
   .class__list {
     flex-wrap: wrap; }
 
-  .class__list .courses__inner {
-     }
-
   .class__list .courses__inner .courses__wrap {
     padding: 50px 20px 22px; } }
 @media only screen and (max-width: 767px) {
@@ -6516,9 +6574,6 @@ h3.widget-title-modal {
 
   .class__list {
     flex-wrap: wrap; }
-
-  .class__list .courses__inner {
-     }
 
   .class__list .courses__inner .courses__wrap {
     padding: 50px 20px 22px; } }
@@ -7253,7 +7308,7 @@ h3.widget-title-modal {
   .dacre__blog__details .blog__inner h2 {
     font-size: 24px;
     line-height: 34px;
-    padding-right: 10%;
+    /* padding-right: 10%; */
     font-family: "Dosis", sans-serif; }
   .dacre__blog__details .blog__inner ul {
     display: -webkit-box;
@@ -7316,9 +7371,11 @@ h3.widget-title-modal {
         height: 1px;
         position: absolute;
         right: 29%;
-        top: 50%;
+        top: 55%;
         transform: translateY(-50%);
-        width: 40px; }
+        width: 20px;
+        margin-right: -120px;
+      }
 
 .kidz__details {
   margin-bottom: 33px; }
@@ -9607,7 +9664,7 @@ footer.footer--2 {
 
 .footer--2.space--vertical .footer__wrapper.section-padding--lg {
   padding-bottom: 80px;
-  padding-top: 177px; }
+  padding-top: 80px; }
 
 .footer__widget .ftr__latest__post .single__ftr__post {
   margin-bottom: 19px;
@@ -9635,7 +9692,7 @@ footer.footer--2 {
   margin-top: 36px; }
 
 .footer__contact__wrapper {
-  padding: 40px 0; }
+  padding: 20px 0; }
   .footer__contact__wrapper .single__footer__address {
     display: flex; }
     .footer__contact__wrapper .single__footer__address .ft__contact__icon {
@@ -9863,3 +9920,169 @@ footer.footer--2 {
 
 
 /*/ end count stats /*/
+
+/************/
+.blur{
+  transition: filter .3s;
+}
+.blur:hover{
+  filter: blur(2.5px) brightness(80%);
+}
+
+.carousel:hover .blur{
+  filter: blur(2.5px) brightness(80%);
+}
+
+/* .carousel-item{
+  transform: translateY(0);
+  transition: all .3s;
+} */
+
+.carousel-item h2{
+  font-family: 'Fredericka the Great', cursive !important;
+  text-align: start;
+  color: #ffffffec !important;
+  font-size: 40px;
+  transform: translateY(0);
+  transition: all .3s;
+}
+
+.carousel-item:hover  h2{
+  transform: translateY(-250px);
+}
+
+.carousel-item p{
+  text-align: start;
+  color:#ffffffec !important;
+  font-size: 25px;
+  transform: translateY(0);
+  opacity: 0;
+  transition: all .3s;
+}
+
+.carousel-item:hover p{
+  transform: translateY(-240px);
+  opacity: 1;
+  transition: all .3s;
+}
+
+
+/* .carousel:hover .carousel-item{
+    transform: translateY(-250px);
+} */
+
+
+
+.jun__header__top__left{
+  transform: translateX(-130px);
+}
+
+.d-block{
+  height: 641px !important;
+}
+
+#more {display: none}
+
+.drop{
+  color: #6f6f6f !important;
+}
+
+/* #262a2b */
+
+.item{
+  transition: all .2s;
+  padding: 20px 25px;
+  width: 500px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  margin-bottom: 80px;
+}
+
+.item:hover{
+  transform: translateY(-8px) scale(1.009);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.item__img{
+  padding-bottom: 20px;
+}
+
+.gallery__thumb:hover{
+ margin-bottom: 20px !important;
+}
+
+.class__list__page .class__list{
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.15);
+}
+
+.class__list__page .class__list:hover{
+  transform: translateY(-8px) scale(1.009);
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.section__title--2{
+  background-color: #f7f7f7;
+}
+.section__title--2:hover{
+  background-color: #f7f7f7;
+}
+
+.ht__bradcaump__area{
+  background-color: #f7f7f7 !important;
+  transition: all .3s;
+}
+.ht__bradcaump__area:hover{
+ transform: translateY(-5px);
+ box-shadow: rgba(0, 0, 0, 0.2);
+}
+
+.title__line__2{
+  
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, .15); 
+  padding: 25px 40px;
+  transition: all .3s;
+  backface-visibility: hidden;
+}
+.title__line__2:hover{
+ transform: scale(1.005)
+}
+
+.schools__subi-tems{
+  transition: all .3s;
+}
+.schools__subi-tems:hover{
+  transform: scale(1.005)
+}
+
+.summercamp__subpoints{
+  width: 1150px;
+  padding: 20px 30px;
+  box-shadow:5px 5px 20px rgba(0, 0, 0, 0.07);
+  transition: all .3s;
+}
+.summercamp__subpoints:hover{
+  transform: scale(1.01);
+  box-shadow:10px 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.blockquote{
+  width:1130px;
+}
+
+.sub__blog2{
+  text-align: end;
+  font-size: large;
+  font-weight: bolder;
+  color: #cecccc !important;
+}
+
+.blog__head__cap{
+  text-align: center; 
+  font-size: 40px;
+  font-family: 'Architects Daughter', cursive;;
+}
+
+.blog__para{
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6 !important;
+  text-align: justify;
+}
